@@ -1,0 +1,21 @@
+<%- include('partials/head', { pageTitle: 'title' }) %>
+<link rel="stylesheet" href="/stylesheets/recPass.css" />
+
+<div class="container-recPass">
+  <h4 class="recPassTitle">Ingrese su correo con el que se ha registrado</h4>
+  <form action="/recPass" method="POST">
+      <label for="email">Email:</label>
+      <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Ingrese su correo"
+          required
+      />
+
+      <div class="btn-container">
+          <button type="submit">Enviar link</button>
+          <a href="/login" class="btn-salir">Salir</a>
+      </div>
+  </form>
+</div>

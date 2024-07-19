@@ -1,11 +1,17 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
-</html>
+<%- include('partials/head', { pageTitle: 'title' }) %>
+<link rel="stylesheet" href="/stylesheets/style.css" />
+<%- include('./partials/menu') %>
+
+<h1><%= title %></h1>
+<h3> Bienvenido al ejercicio integrador "Authentication" </h3>
+
+ <p> Esta aplicación te permite:</p>
+  
+ <ul>
+  <li>Registrar una nueva cuenta.</li>
+  <li> Iniciar sesión en tu cuenta.</li>
+  <li> Recuperar tu contraseña si la olvidas.</li>
+ </ul> 
+ 
+ 
+  <p>¡Explora y disfruta!</p>

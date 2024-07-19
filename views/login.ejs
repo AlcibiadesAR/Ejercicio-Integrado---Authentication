@@ -1,0 +1,18 @@
+<%- include('partials/head', { pageTitle: 'title' }) %>
+<link rel="stylesheet" href="/stylesheets/login.css" />
+
+<div class="container-login">
+    <h1 class="loginTitle">Login</h1>
+    <form action="/login" method="POST">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Ingrese su correo" required>
+        
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" placeholder="Ingrese su contraseña" required>
+        
+        <a href="/recPass" class="olviPass">¿Olvidaste tu contraseña?</a>
+        
+        <button type="submit" class="btn-submit">Iniciar sesión</button>
+        <a href="/register" class="createRegister">¿No tienes cuenta? Regístrate aquí</a>
+    </form>
+</div>
